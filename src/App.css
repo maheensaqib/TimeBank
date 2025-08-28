@@ -1,0 +1,27 @@
+.auth_bg{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top,rgb(148, 3, 3), rgb(231, 119, 10), rgb(248, 193, 70));
+}
+.auth_box{
+    display: flex;
+    flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+background-color: rgba(255, 255, 255, 0.35);
+backdrop-filter: blur(5px);
+/* border: 1px solid white; */
+border-radius: 10px;
+box-shadow: 0 0 10px white;
+/* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+padding: 20px;
+text-align: center;
+}
+.login_input{
+  margin: 20px auto;
+  border-bottom: 2px solid #940303;
+  border-radius: 5px;
+}
