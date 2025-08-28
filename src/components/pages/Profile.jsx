@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { doc, getDoc, updateDoc } from "firebase/firestore";
+
 import { auth, db } from "../../firebase"; // adjust path
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faCamera } from '@fortawesome/free-solid-svg-icons';
@@ -56,7 +57,7 @@ const Profile = () => {
 <div className="flex flex-col items-center mb-8">
   <div className="relative">
     <img
-      src={formData.pictureUrl || profilePic || "/default-profile.png"}
+      src={formData.pictureUrl  || "/default-profile.png"}
       alt="Profile"
       className="w-32 h-32 rounded-full border-4 border-[rgb(158,3,3)] shadow-md object-cover"
     />
