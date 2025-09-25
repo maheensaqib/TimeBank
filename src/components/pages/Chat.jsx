@@ -14,8 +14,6 @@ const Chat = () => {
   const [newMessage, setNewMessage] = useState("");
   const [file, setFile] = useState(null);
   const [uploading, setUploading] = useState(false);
-
-  // ✅ New states for offers + ratings
   const [showRating, setShowRating] = useState(false);
   const [rating, setRating] = useState(0);
   const [ratingContext, setRatingContext] = useState(null);

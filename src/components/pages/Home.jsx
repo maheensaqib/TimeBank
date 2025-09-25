@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 import {collection, getDocs, doc, getDoc, query, where, addDoc, onSnapshot} from "firebase/firestore";
-import { db, auth } from "../../firebase"; // adjust path
+import { db, auth } from "../../firebase"; 
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -124,7 +124,6 @@ const Home = () => {
       {/* Main content */}
       <div className="p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* Subjects menu */}
-        {/* ✅ RESTORED: This is the original code to display your subjects */}
         <div className="bg-white p-4 rounded-lg shadow-md h-fit">
           <h2 className="text-xl text-[rgb(148_3_3)] font-bold mb-3">Subjects</h2>
           {subjectsData.map((subject) => (
