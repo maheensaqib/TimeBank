@@ -6,6 +6,7 @@ import Home from "./components/pages/Home";
 import Profile from "./components/pages/Profile";
 import Offers from "./components/pages/Offers";
 import Chat from "./components/pages/Chat";
+import Assignment from "./components/pages/assignment"
 import './App.css'
 
 
@@ -29,6 +30,7 @@ function App(){
         <Route path="/profile" element={<Profile />} />
         <Route path="/offers" element={<Offers />} />
         <Route path="/chat" element={<Chat />} />
+        <Route path="/assignment" element={<Assignment />} />
       </Routes>
     </Router>
   );
